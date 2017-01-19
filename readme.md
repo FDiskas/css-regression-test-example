@@ -6,6 +6,7 @@
 
 ## To update the reference images
 Then you change how you website looks you should update the reference images to
+
 1. `npm run reference`
 1. Add newly added files to your repo
 
