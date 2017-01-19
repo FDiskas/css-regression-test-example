@@ -1,0 +1,21 @@
+{
+  "name": "css-regression-test-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/succss check test/pages.js --ssl-protocol=any --ignore-ssl-errors=true",
+    "reference": "./node_modules/.bin/succss add test/pages.js --ssl-protocol=any --ignore-ssl-errors=true --rmtree && ./node_modules/.bin/optipng test/img/*",
+    "start": "browser-sync start --server --serveStatic './src'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "casperjs": "^1.1.3",
+    "imagemin-optipng": "^5.2.1",
+    "phantomjs": "^2.1.7",
+    "succss": "^1.7.3"
+  }
+}
